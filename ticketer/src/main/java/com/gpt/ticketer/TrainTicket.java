@@ -1,10 +1,11 @@
 package com.gpt.ticketer;
 
 
-
+import jakarta.persistence.*;
 
 @Entity
 public class TrainTicket {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
